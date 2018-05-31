@@ -81,8 +81,8 @@
 #  define _TCC_SIZE(n,unused)              TPASTE3(TCC,n,_SIZE),
 #  define _TCC_MAX(n,unused)               _SIZE_MAX(TPASTE3(TCC,n,_SIZE)),
 #  define _TCC_EXT(n,unused)               TPASTE3(TCC,n,_EXT),
-#  define _TCC_CC_NUM(n,unused)            min(TPASTE3(TCC,n,_CC_NUM),TCC_NUM_CHANNELS),
-#  define _TCC_OW_NUM(n,unused)            min(TPASTE3(TCC,n,_OW_NUM),TCC_NUM_WAVE_OUTPUTS),
+#  define _TCC_CC_NUM(n,unused)            at_min(TPASTE3(TCC,n,_CC_NUM),TCC_NUM_CHANNELS),
+#  define _TCC_OW_NUM(n,unused)            at_min(TPASTE3(TCC,n,_OW_NUM),TCC_NUM_WAVE_OUTPUTS),
 
 #  define TCC_GCLK_IDS      { MREPEAT(TCC_INST_NUM, _TCC_GCLK_ID, 0) }
 #  define TCC_APBCMASKS     { MREPEAT(TCC_INST_NUM, _TCC_APBCMASK, 0) }

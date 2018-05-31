@@ -646,37 +646,6 @@ typedef struct {
  *
  * @{ */
 
-/** \brief Takes the absolute value of \a a.
- *
- * \param[in] a Input value.
- *
- * \return Absolute value of \a a.
- *
- * \note More optimized if only used with values known at compile time.
- */
-#define Abs(a)              (((a) <  0 ) ? -(a) : (a))
-
-/** \brief Takes the minimal value of \a a and \a b.
- *
- * \param[in] a Input value.
- * \param[in] b Input value.
- *
- * \return Minimal value of \a a and \a b.
- *
- * \note More optimized if only used with values known at compile time.
- */
-#define Min(a, b)           (((a) < (b)) ?  (a) : (b))
-
-/** \brief Takes the maximal value of \a a and \a b.
- *
- * \param[in] a Input value.
- * \param[in] b Input value.
- *
- * \return Maximal value of \a a and \a b.
- *
- * \note More optimized if only used with values known at compile time.
- */
-#define Max(a, b)           (((a) > (b)) ?  (a) : (b))
 
 /** \brief Takes the minimal value of \a a and \a b.
  *
@@ -687,7 +656,7 @@ typedef struct {
  *
  * \note More optimized if only used with values unknown at compile time.
  */
-#define min(a, b)   Min(a, b)
+#define at_min(a, b)           (((a) < (b)) ?  (a) : (b))
 
 /** \brief Takes the maximal value of \a a and \a b.
  *
@@ -698,7 +667,7 @@ typedef struct {
  *
  * \note More optimized if only used with values unknown at compile time.
  */
-#define max(a, b)   Max(a, b)
+#define at_max(a, b)           (((a) > (b)) ?  (a) : (b))
 
 /** @} */
 

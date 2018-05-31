@@ -45,7 +45,7 @@
  */
 
 #include <system.h>
-#include <toolchain.h>
+#include <mbed_toolchain.h>
 
 /**
  * \internal

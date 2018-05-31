@@ -3477,7 +3477,7 @@
         "extra_labels": ["Atmel", "SAM_CortexM0P", "SAMD21"],
         "supported_toolchains": ["GCC_ARM", "ARM", "uARM"],
         "device_has": ["ANALOGIN", "ANALOGOUT", "I2C", "I2CSLAVE", "I2C_ASYNCH", "INTERRUPTIN", "PORTIN", "PORTINOUT", "PORTOUT", "PWMOUT", "SERIAL", "SERIAL_ASYNCH", "SERIAL_FC", "SLEEP", "SPI", "SPISLAVE", "SPI_ASYNCH"],
-        "release_versions": ["2"],
+        "release_versions": ["2","5"],
         "device_name": "ATSAMD21J18A"
     },
     "SAMD21G18A": {
