@@ -17,10 +17,13 @@
 #ifndef MBED_MBED_RTX_H
 #define MBED_MBED_RTX_H
 
-#if defined(TARGET_SAMD21J18A)
+#if ( defined(TARGET_SAMD21G18A) ||\
+     defined(TARGET_SAMD21J18A) ||\
+     defined(TARGET_SAML21J18A) ||\
+     defined(TARGET_SAMR21G18A))
 
 #ifndef INITIAL_SP
-#define INITIAL_SP              (0x20000000)
+#define INITIAL_SP              (0x20008000)
 #endif
 
 #endif
